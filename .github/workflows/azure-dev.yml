@@ -20,11 +20,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      AZURE_CLIENT_ID: ${{ vars.AZURE_CLIENT_ID }}
-      AZURE_TENANT_ID: ${{ vars.AZURE_TENANT_ID }}
-      AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+      # AZURE_CLIENT_ID: ${{ vars.AZURE_CLIENT_ID }}
+      AZURE_TENANT_ID: 0c538537-b87c-4659-a16e-af01d698d430
+      AZURE_SUBSCRIPTION_ID: a789505e-54fc-4456-bc81-1901e7d1396d
       AZURE_ENV_NAME: dev
-      AZURE_LOCATION: ${{ vars.AZURE_LOCATION }}
+      AZURE_LOCATION: australiasoutheast
     steps:
       - name: Checkout
         uses: actions/checkout@v4
